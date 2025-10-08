@@ -99,7 +99,9 @@
 // d. 50.2kilograms
 
 // Answer
-var userInput = +prompt("Enter you weight in kilogram");
+// var userInput = prompt("Enter you weight in kilogram");
+// var convertedToNum = parseFloat(userInput);
+// document.write("The weight of user is " + convertedToNum + " kilograms");
 
 
 
