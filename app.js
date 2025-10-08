@@ -270,7 +270,7 @@
 // if (userInput.length < 6) {
 //     document.write("Please Enter Atleast 6 character");
 // } else if (userInput.charCodeAt(0) >= 48 && userInput.charCodeAt(0) <= 57) {
-//     document.write("Please do not enter number in the start  <br />");
+//     document.write("Please do not enter number in the start");
 // } else {
 
 //     for (let i = 0; i < userInput.length; i++) {
@@ -292,9 +292,9 @@
 //     if (hasLetter && hasNum) {
 //         document.write("Valid Password");
 //     } else if (!hasLetter) {
-//         document.write("Password should include letters  <br/>");
+//         document.write("Password should include letters");
 //     } else if (!hasNum) {
-//         document.write("Password should include numbers  <br/>");
+//         document.write("Password should include numbers");
 //     }
 // }
 
@@ -302,4 +302,50 @@
 
 
 
-// Q
+// Q16. Write a program to convert the following string to an array using string split method.
+// var university = “University of Karachi”;
+// Display the elements of array in your browser.
+
+// Answer
+// var university = "University of Karachi";
+// var split = university.split("");
+// for (var i = 0; i < university.length; i++) {
+//     document.write(split[i] + "<br />");
+// }
+
+
+
+
+
+// Q17. Write a program to display the last character of a user input.
+
+// Answer
+// var userInput = prompt("Enter any word and I'll display last later of that word");
+// var lastLetter = userInput[userInput.length - 1];
+
+// document.write("User input: " + userInput + "<br />");
+// document.write("Last charater of input: " + lastLetter);
+
+
+
+
+
+// Q18. You have a string
+// “The quick brown fox jumps over the lazy dog”.
+// Write a program to count number of occurrences of word “the” in given string.
+
+// Answer
+// var text = "The quick brown fox jumps over the lazy dog";
+// var check = "the";
+// var checkComesThisTimes = 0;
+
+// for (let i = 0; i < text.length; i++) {
+    
+//     if (text.slice(i, i + 3).toLowerCase() === check) {
+        
+//         checkComesThisTimes ++;
+//     }
+// }
+
+// document.write("Text: " + text + "<br />");
+// document.write("There are " + checkComesThisTimes + " occurence(s) of word '" + check + "'");
